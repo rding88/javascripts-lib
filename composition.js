@@ -21,7 +21,7 @@ compose(
   filter(u => u.age >= 18)
 )(users) //["Jack", "Milady"]
 
-const reduce = cb => arr => arr.reduce(cb); //Just currify the reduce function
+const reduce = cb => (...arr) => arr.reduce(cb); //Just currify the reduce function
 
 const mapWords = map(() => 1);
 const reduceWords = reduce((acc, curr) => acc += curr)(0);

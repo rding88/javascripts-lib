@@ -1,1 +1,1 @@
-# javacsripts-lib
+# javascripts-lib
