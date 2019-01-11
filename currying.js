@@ -37,3 +37,10 @@ const movies = [
   const getName = get('name');
   console.log(movies.map(getName)); 
   console.log(series.map(getName)); 
+
+multiply = (n, m) => (n * m)
+multiply(3, 4) === 12 // true
+
+curryedMultiply = (n) => ( (m) => multiply(n, m) )
+triple = curryedMultiply(3)
+triple(4) === 12 // true
